@@ -3,5 +3,47 @@
 </head>
 <body>
 <h2>Hello world</h2>
+  <section id="contactus" class="section-padding">	
+	<div class="container mt-5">
+		<h2>contact us.</h2>
+	</div>
+	<div class="container">			
+	<div class="row mb-3">
+		<div class="col-md-6 themed-grid-col">
+			<div class="pb3">
+				<form id="contact-form" name="contact-form" action="mail.php" method="POST" role="form">
+				  <div class="form-group">                            
+					<label for="email">Email address</label>
+					<input type="email" class="form-control" id="email" placeholder="name@example.com">
+				  </div>
+		    </div>
+			<div class="pb3">
+				<div class="form-group">
+				<label for="subject">Select one</label>
+				<select class="form-control" id="subject" name="subject">
+				  <option>Unirme al proyecto</option>
+				  <option>Unirme al colectivo YUDesign</option>
+				  <option>Colaboración</option>
+				  <option>Otro</option>			  
+				</select>
+			  </div>
+		    </div>
+			<div class="pb3">
+				<div class="form-group">							
+					<label for="message">Example textarea</label>
+					<textarea class="form-control" id="message" name="message" rows="5"></textarea>
+				</div>
+		    </div>
+			<div class="pb3">
+				<button type="submit" class="btn btn-secondary mb-5">Send it</button>
+				<a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+			</div>
+		</div>
+		<div class="col-md-4 themed-grid-col pt-4">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3079.4891094308414!2d-0.34404368463230645!3d39.48086897948489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604881556f5759%3A0xa465dae00eda6516!2sGeneraci%C3%B3n+Espont%C3%A1nea+Design+Factory+-+UPV!5e0!3m2!1ses!2ses!4v1553604112645" width="500" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+		</form>
+		</div>
+	</section>
 </body>
 </html>
